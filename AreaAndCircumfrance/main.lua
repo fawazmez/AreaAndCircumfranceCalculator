@@ -34,15 +34,15 @@ calculateButton.id = "calculate button"
 local function calculateButtonTouch( event )
     -- this function calculates the area and circumfrance
  
-    local Diameter
+        local Diameter
 	local Area 
 	local Circumfrance
 	
     
-    Diameter = DiameterTextField.text
-    Area = AreaTextField.text
-    Circumfrance = CircumfranceTextField.text
-  	Area = math.pi * Diameter^2
+        Diameter = DiameterTextField.text
+        Area = AreaTextField.text
+        Circumfrance = CircumfranceTextField.text
+  	Area = math.pi * (Diameter / 2)^2
 	Circumfrance = 2 * math.pi * Diameter
 	-- print( area and circumfrance )
    AreaTextField.text = "The area is " .. Area.."cm"
